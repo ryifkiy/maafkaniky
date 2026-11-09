@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5b800" />
+    <meta
+      name="description"
+      content="Sebuah permintaan maaf yang tulus dari Iky untuk Rizka."
+    />
+    <title>Untuk Rizka — dari Iky</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="petals" aria-hidden="true"></div>
+
+    <main id="app">
+      <section class="screen screen--intro is-active" data-screen="intro">
+        <div class="sun-orb sun-orb--one" aria-hidden="true"></div>
+        <div class="sun-orb sun-orb--two" aria-hidden="true"></div>
+
+        <div class="intro-scene">
+          <div class="floating-note floating-note--left" aria-hidden="true">
+            <span>untuk seseorang</span>
+            <strong>yang selalu membawa hangat dan warna</strong>
+          </div>
+
+          <div class="envelope-wrap">
+            <div class="lily lily--left" aria-hidden="true">
+              <span class="lily__petal p1"></span><span class="lily__petal p2"></span>
+              <span class="lily__petal p3"></span><span class="lily__petal p4"></span>
+              <span class="lily__petal p5"></span><span class="lily__center"></span>
+            </div>
+
+            <button class="envelope" id="open-letter" aria-label="Buka surat untuk Rizka">
+              <span class="envelope__back"></span>
+              <span class="envelope__paper">
+                <small>untuk</small>
+                <strong>Rizka</strong>
+                <em>my yellow energy</em>
+              </span>
+              <span class="envelope__front"></span>
+              <span class="envelope__seal">I</span>
+            </button>
+
+            <div class="lily lily--right" aria-hidden="true">
+              <span class="lily__petal p1"></span><span class="lily__petal p2"></span>
+              <span class="lily__petal p3"></span><span class="lily__petal p4"></span>
+              <span class="lily__petal p5"></span><span class="lily__center"></span>
+            </div>
+          </div>
+
+          <button class="primary-button" data-go="menu">
+            <span>Buka pelan-pelan</span>
+            <span class="button-arrow">→</span>
+          </button>
+          <p class="intro-hint">Ada beberapa hal yang ingin Iky sampaikan.</p>
+
+          <div class="duck duck--intro" aria-hidden="true">
+            <span class="duck__body"></span><span class="duck__head"></span>
+            <span class="duck__beak"></span><span class="duck__eye"></span>
+            <span class="duck__wing"></span><span class="duck__leg leg-a"></span>
+            <span class="duck__leg leg-b"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen screen--menu" data-screen="menu">
+        <div class="screen-shell menu-shell">
+          <header class="section-heading">
+            <p class="eyebrow">Satu per satu, ya?</p>
+            <h1>Pilih yang ingin<br /><em>Rizka buka dulu</em></h1>
+            <p>Empat hal kecil yang sebagai simbol permintaan maaf.</p>
+          </header>
+
+          <div class="surprise-grid">
+            <button class="surprise-card surprise-card--photos" data-go="photos">
+              <span class="card-number">01</span>
+              <span class="card-art polaroid-stack" aria-hidden="true">
+                <i></i><i></i><i></i>
+              </span>
+              <strong>Foto Kita</strong>
+              <small>potongan Cerita Kita</small>
+            </button>
+
+            <button class="surprise-card surprise-card--moments" data-go="moments">
+              <span class="card-number">02</span>
+              <span class="card-art tiny-clock" aria-hidden="true">
+                <i></i>
+              </span>
+              <strong>Hal-Hal Kecil</strong>
+              <small>bebek-bebek kesayangan Rizka</small>
+            </button>
+
+            <button class="surprise-card surprise-card--music" data-go="music">
+              <span class="card-number">03</span>
+              <span class="card-art vinyl" aria-hidden="true"><i></i></span>
+              <strong>Alonica</strong>
+              <small>Suara yang Rizka suka</small>
+            </button>
+
+            <button class="surprise-card surprise-card--letter" data-go="letter">
+              <span class="card-number">04</span>
+              <span class="card-art gift-box" aria-hidden="true"><i></i></span>
+              <strong>Surat dari Iky</strong>
+              <small>yang paling ingin Iky sampaikan</small>
+            </button>
+          </div>
+
+          <p class="menu-note">Tidak harus langsung memaafkan. Cukup baca saat hati Rizka siap.</p>
+        </div>
+      </section>
+
+      <section class="screen screen--photos" data-screen="photos">
+        <button class="back-button" data-go="menu" aria-label="Kembali ke pilihan">← <span>kembali</span></button>
+        <div class="screen-shell photo-shell">
+          <header class="section-heading section-heading--compact">
+            <p class="eyebrow">Sedikit tentang kita</p>
+            <h1>Foto-foto yang<br /><em>menyimpan cerita</em></h1>
+          </header>
+
+          <div class="photo-wall" aria-label="Galeri foto Rizka dan Iky">
+            <figure class="photo-frame frame-1"><div class="photo-slot"><img src="assets/photos/foto-1.jpg" alt="Kenangan Rizka dan Iky 1" /></div><figcaption>first date</figcaption></figure>
+            <figure class="photo-frame frame-2"><div class="photo-slot"><img src="assets/photos/foto-2.jpg" alt="Kenangan Rizka dan Iky 2" /></div><figcaption>PS dan TEKKEN</figcaption></figure>
+            <figure class="photo-frame frame-3"><div class="photo-slot"><img src="assets/photos/foto-3.jpg" alt="Kenangan Rizka dan Iky 3" /></div><figcaption>Hari dimana Iky di rayakan</figcaption></figure>
+            <figure class="photo-frame frame-4"><div class="photo-slot"><img src="assets/photos/foto-4.jpg" alt="Kenangan Rizka dan Iky 4" /></div><figcaption>Study Date</figcaption></figure>
+            <figure class="photo-frame frame-5"><div class="photo-slot"><img src="assets/photos/foto-5.jpg" alt="Kenangan Rizka dan Iky 5" /></div><figcaption>Hari dimana Iky pembuktian</figcaption></figure>
+            <figure class="photo-frame frame-6"><div class="photo-slot"><img src="assets/photos/foto-6.jpg" alt="Kenangan Rizka dan Iky 6" /></div><figcaption>random, tapi lucu</figcaption></figure>
+          </div>
+
+          <div class="photo-copy">
+            <p>Foto mungkin hanya menangkap satu detik, tapi perasaan di baliknya bisa tinggal jauh lebih lama.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen screen--moments" data-screen="moments">
+        <button class="back-button" data-go="menu" aria-label="Kembali ke pilihan">← <span>kembali</span></button>
+        <div class="screen-shell moments-shell">
+          <header class="section-heading section-heading--compact">
+            <p class="eyebrow">Bebek-bebek kesayangan Rizka</p>
+            <h1>Empat boneka kecil,<br /><em>tiga cerita yang hangat</em></h1>
+          </header>
+
+          <div class="moments-list">
+            <article class="moment-card doll-card">
+              <span class="doll-order">01</span>
+              <div>
+                <h2>Curut</h2>
+                <p class="doll-from">Dari Nina · Duo Maut</p>
+                <p>Curut adalah boneka bebek pertama yang memulai semuanya. Hadiah dari Nina, sosok yang selalu dekat dan mengerti Rizka di tengah sibuknya kehidupan kampus. Curut bukan sekadar boneka pertama—ia seperti pengingat kecil bahwa Rizka selalu punya sahabat yang memahami isi kepalanya, bahkan ketika tidak semua hal perlu dijelaskan dengan kata-kata.</p>
+              </div>
+            </article>
+            <article class="moment-card doll-card doll-card--pair">
+              <span class="doll-order">02</span>
+              <div>
+                <h2>Cudut &amp; Cungil</h2>
+                <p class="doll-from">Dari Iky · Tukang Galon yang jarang makan dan malas mandi</p>
+                <p>Dua bebek kecil dari cowok pertama yang memberi Rizka boneka. Mungkin yang memberinya masih sering lupa sarapan, harus diingatkan mandi, dan belum selalu pandai menyampaikan perasaan. Tapi lewat Cudut dan Cungil, Iky ingin meninggalkan dua hal sederhana: alasan kecil untuk Rizka tersenyum dan pengingat bahwa ada seseorang yang diam-diam selalu ingin melihat hari Rizka terasa lebih hangat.</p>
+              </div>
+            </article>
+            <article class="moment-card doll-card">
+              <span class="doll-order">03</span>
+              <div>
+                <h2>Pii</h2>
+                <p class="doll-from">Dari Caca · Sumber Informasi</p>
+                <p>Pii adalah bebek lucu dari Caca yang memberi Rizka boneka. Namun ceritanya terasa istimewa, karena Caca juga menjadi orang yang mempertemukan jalan Rizka dengan Iky. Jadi setiap kali melihat Pii, semoga Rizka teringat bahwa terkadang pertemuan yang berarti berawal dari seorang teman, sebuah kebetulan kecil, lalu tumbuh menjadi cerita yang tidak pernah kita sangka sebelumnya.</p>
+              </div>
+            </article>
+          </div>
+
+          <blockquote>“Curut memulai ceritanya, Cudut dan Cungil membawa warna baru, lalu Pii mengingatkan bagaimana jalan Rizka dan Iky pernah dipertemukan.”</blockquote>
+        </div>
+      </section>
+
+      <section class="screen screen--music" data-screen="music">
+        <button class="back-button" data-go="menu" aria-label="Kembali ke pilihan">← <span>kembali</span></button>
+        <div class="screen-shell music-shell">
+          <div class="music-copy">
+            <p class="eyebrow">Untuk my yellow energy</p>
+            <h1>Satu lagu<br /><em>untuk Rizka</em></h1>
+            <p>Ada lagu yang terasa seperti tempat, ada juga yang terasa seperti seseorang. Alonica selalu mengingatkan Iky pada hangat yang Rizka bawa.</p>
+            <div class="track-label">
+              <span class="track-dot"></span>
+              <div><strong>Alonica</strong><small>LANY · Official Music Video</small></div>
+            </div>
+          </div>
+
+          <div class="video-collage">
+            <div class="video-frame">
+              <a
+                class="youtube-card"
+                href="https://www.youtube.com/watch?v=qJcfMeAeZAQ"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Putar LANY - Alonica di YouTube"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/qJcfMeAeZAQ/maxresdefault.jpg"
+                  alt="Thumbnail video musik LANY - Alonica"
+                />
+                <span class="youtube-play" aria-hidden="true">▶</span>
+                <span class="youtube-caption"><strong>Putar Alonica</strong><small>membuka video resmi di YouTube</small></span>
+              </a>
+            </div>
+            <div class="mini-polaroid mini-polaroid--a"><div class="photo-slot"><img src="assets/photos/foto-2.jpg" alt="Foto kenangan kecil" /></div></div>
+            <div class="mini-polaroid mini-polaroid--b"><div class="photo-slot"><img src="assets/photos/foto-5.jpg" alt="Foto kenangan kecil" /></div></div>
+            <div class="music-notes" aria-hidden="true">♪ ♫ ♪</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen screen--letter" data-screen="letter">
+        <button class="back-button" data-go="menu" aria-label="Kembali ke pilihan">← <span>kembali</span></button>
+        <div class="screen-shell letter-shell">
+          <div class="letter-decor letter-decor--left" aria-hidden="true">✦</div>
+          <div class="letter-decor letter-decor--right" aria-hidden="true">✦</div>
+
+          <article class="paper-letter">
+            <header>
+              <p class="eyebrow">Dari hati yang sedang belajar</p>
+              <h1>Untuk Rizka,</h1>
+            </header>
+
+            <div class="letter-body">
+              <p>Rizka, maafin Iky, ya. Akhir-akhir ini Iky sadar Iky terlalu sering terlihat cuek. Iky membiarkan hari berjalan begitu saja sampai lupa bahwa hal kecil yang mungkin Iky anggap biasa, justru selalu Rizka perhatikan dengan sepenuh hati.</p>
+
+              <p>Iky membuat ini bukan untuk meminta Rizka bertahan sambil terus menahan sakit. Iky juga tidak ingin kata maaf ini menjadi alasan agar semuanya langsung kembali seperti semula. Iky hanya ingin menyampaikan maaf yang selama ini belum bisa Iky rangkai dengan baik.</p>
+
+              <p>Maafin Iky yang terlalu banyak diam, yang memilih menyimpan kepedihan sendiri sampai tanpa sadar membuat Rizka merasa jauh. Seharusnya Iky belajar bercerita, bukan membiarkan Rizka menebak-nebak isi hati Iky. Rizka pantas mendapatkan kejujuran, perhatian, dan rasa aman—bukan kebingungan dari sikap Iky.</p>
+
+              <p>Terima kasih karena selalu peka, bahkan pada hal-hal kecil yang sering Iky lewatkan. Kehadiran Rizka punya warna yang sulit dijelaskan: hangat, lembut, dan selalu berhasil membuat hari Iky lebih terang. Mungkin itu sebabnya Iky selalu menyebut Rizka sebagai <em>my yellow energy</em>.</p>
+
+              <p>Iky tidak bisa menjanjikan semuanya akan langsung sempurna. Tapi Iky ingin belajar menjadi seseorang yang lebih terbuka, lebih hadir, dan lebih menghargai setiap hal kecil tentang Rizka. Kalau Rizka membutuhkan waktu, Iky akan menghargainya. Kalau suatu hari Rizka bersedia, Iky ingin membuktikan permintaan maaf ini lewat sikap, bukan hanya kata-kata.</p>
+
+              <p><strong>I’m truly sorry, my yellow energy.</strong> Terima kasih sudah menjadi cahaya di hari-hari Iky. Iky sayang Rizka—dengan hati yang sedang belajar mencintai dengan lebih baik.</p>
+            </div>
+
+            <footer>
+              <span>dengan tulus,</span>
+              <strong>Iky</strong>
+            </footer>
+          </article>
+
+          <div class="closing-note">
+            <span class="tiny-duck" aria-hidden="true">🐥</span>
+            <p>Tidak perlu menjawab sekarang. Ambil waktu sebanyak yang Rizka butuhkan.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
